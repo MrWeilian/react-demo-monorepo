@@ -4,7 +4,7 @@ import commonjs from '@rollup/plugin-commonjs';
 
 export default {
   input: 'index.ts',
-  external: ['react'],
+  external: ['react', '@my/react-bundle-context'],
   output: {
     file: 'dist/index.js',
     format: 'es'
