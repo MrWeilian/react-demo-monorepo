@@ -8,6 +8,7 @@ export default {
     file: 'dist/index.js',
     format: 'es'
   },
+  external: ['react'],
   plugins: [
     typescript({
       tsconfig: "./tsconfig.json"
