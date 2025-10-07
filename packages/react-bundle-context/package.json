@@ -2,12 +2,14 @@
   "name": "@my/react-bundle-context",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "type": "module",
   "exports": {
     ".": {
-      "import": "./src/index.ts"
+      "import": "./dist/index.js"
     }
+  },
+  "scripts": {
+    "build": "rollup --config"
   },
   "keywords": [],
   "author": "",
@@ -15,5 +17,10 @@
   "packageManager": "pnpm@10.18.1",
   "peerDependencies": {
     "react": "^19.1.1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.6",
+    "@types/react": "^19.1.16",
+    "rollup": "^4.52.4"
   }
 }

@@ -1,6 +1,11 @@
 import { createContext, useContext } from 'react'
 
-export const MyContext = createContext(null)
+export type MyContextValue = {
+  count: number
+  setCount: (val: number) => void
+}
+
+export const MyContext = createContext<MyContextValue>(null!)
 
 export const useMyContext = () => {
   const myContext = useContext(MyContext)
