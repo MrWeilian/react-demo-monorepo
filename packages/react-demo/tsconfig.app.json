@@ -22,9 +22,18 @@
     "noUnusedParameters": true,
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
-  },
+    "noUncheckedSideEffectImports": true,
+
+    "paths": {
+      "@my/react-bundle": [
+        "../react-bundle"
+      ],
+      "@my/react-bundle-context": [
+        "../react-bundle-context"
+      ]
+    }
+    },
   "include": [
-    "src",
+    "src"
   ]
 }
