@@ -2,15 +2,26 @@
   "name": "@my/react-bundle",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js"
+    }
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup --config"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "packageManager": "pnpm@10.18.1",
   "peerDependencies": {
+    "@my/react-bundle-context": "workspace:*",
     "react": "^19.1.1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.6",
+    "@types/react": "^19.1.16",
+    "rollup": "^4.52.4"
   }
 }

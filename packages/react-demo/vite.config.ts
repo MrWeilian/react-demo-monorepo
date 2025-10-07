@@ -10,6 +10,10 @@ export default defineConfig({
       {
         find: '@my/react-bundle-context',
         replacement: path.resolve('../react-bundle-context/index.ts'),
+      },
+      {
+        find: '@my/react-bundle',
+        replacement: path.resolve('../react-bundle/index.ts'),
       }
     ]
   }

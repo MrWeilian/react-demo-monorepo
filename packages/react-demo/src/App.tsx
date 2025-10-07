@@ -1,4 +1,5 @@
 import { useMyContext } from '@my/react-bundle-context'
+import { CompA } from '@my/react-bundle'
 import './App.css'
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <>
       <p>count:{count}</p>
       <button onClick={() => setCount(count + 1)}>addCount</button>
+      <CompA />
     </>
   )
 }
