@@ -1,0 +1,19 @@
+{
+  "name": "@my/react-bundle-context",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./src/index.ts"
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.18.1",
+  "peerDependencies": {
+    "react": "^19.1.1"
+  }
+}
