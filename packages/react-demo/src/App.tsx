@@ -1,6 +1,6 @@
 import { useMyContext } from '@my/react-bundle-context'
 import { CompA } from '@my/react-bundle'
-import './App.css'
+import '@/App.css'
 
 function App() {
   const { count, setCount } = useMyContext()!
